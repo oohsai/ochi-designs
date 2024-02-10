@@ -8,7 +8,7 @@ export default function Cards() {
             src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
           />
           <button className="absolute px-5 py-3 rounded-full border-2 left-10 bottom-10">
-            &copy; check
+            &copy; 2019-2024
           </button>
         </div>
       </div>
@@ -16,22 +16,22 @@ export default function Cards() {
         <div className="card rounded-xl w-1/2 h-full bg-[#5a7370]">
           <div className="card relative rounded-xl w-full h-full  flex items-center justify-center">
             <img
-              className="w-32"
-              src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
+              className="w-32 capitalize"
+              src="https://ochi.design/wp-content/uploads/2022/04/logo002.svg"
             />
-            <button className="absolute px-5 py-3 rounded-full border-2 left-10 bottom-10">
-              &copy; check
+            <button className="absolute px-5 py-3 rounded-full border-2 left-10  bottom-10 uppercase">
+              Rating 5.0 on clutch
             </button>
           </div>
         </div>
-        <div className="card rounded-xl w-1/2 h-full bg-[#747a79]">
+        <div className="card rounded-xl w-1/2 h-full bg-[#212121]">
           <div className="card relative rounded-xl w-full h-full flex items-center justify-center">
             <img
               className="w-32"
-              src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
+              src="https://ochi.design/wp-content/uploads/2022/04/logo003.png"
             />
-            <button className="absolute px-5 py-3 rounded-full border-2 left-10 bottom-10">
-              &copy; check
+            <button className="absolute px-5 py-3 rounded-full border-2 left-10 bottom-10 uppercase">
+              Alumni
             </button>
           </div>
         </div>

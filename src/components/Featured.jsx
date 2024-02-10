@@ -16,7 +16,7 @@ export default function Featured() {
             onHoverEnd={() => cards[0].start({ y: "100%" })}
             className="cardcontainer relative w-1/2 h-[80vh]"
           >
-            <div className="absolute flex text-[#CDEA68] overflow-hidden left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter text-8xl">
+            <div className="absolute flex text-[#CDEA68] overflow-hidden left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter text-8xl font-semibold">
               {"FYDE".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
@@ -41,7 +41,7 @@ export default function Featured() {
             onHoverEnd={() => cards[1].start({ y: "100%" })}
             className="cardcontainer relative w-1/2 h-[80vh] "
           >
-            <div className="absolute flex overflow-hidden text-[#CDEA68] rigth-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter text-8xl">
+            <div className="absolute flex overflow-hidden text-[#CDEA68] rigth-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter text-8xl font-semibold">
               {"VISE".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}

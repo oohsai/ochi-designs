@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Bfooter from "./components/Bfooter";
 import Cards from "./components/Cards";
 import Eyes from "./components/Eyes";
 import Featured from "./components/Featured";
@@ -20,6 +21,7 @@ function App() {
       <Eyes />
       <Featured />
       <Cards />
+      <Bfooter />
       <Footer />
     </div>
   );
