@@ -1,11 +1,7 @@
-import { motion } from "framer-motion";
-import { Power4 } from "gsap/all";
-import { useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 
 export default function Featured() {
-  const [isHovering, setHovering] = useState(false);
-  const [isHovering1, setHovering1] = useState(false);
-
+  const cards = [useAnimation(), useAnimation()];
   return (
     <div className="w-full py-20 bg-zinc-900">
       <div className="w-full px-20 border-b-[1px] border-zinc-700 pb-20">
@@ -14,19 +10,19 @@ export default function Featured() {
         </h1>
       </div>
       <div className="px-20">
-        <div className="cards flex gap-10 mt-20 ">
-          <div
-            onMouseEnter={() => setHovering(true)}
-            onMouseLeave={() => setHovering(false)}
+        <div className="cards w-full flex gap-10 mt-20 ">
+          <motion.div
+            onHoverStart={() => cards[0].start({ y: "0" })}
+            onHoverEnd={() => cards[0].start({ y: "100%" })}
             className="cardcontainer relative w-1/2 h-[80vh]"
           >
             <div className="absolute flex text-[#CDEA68] overflow-hidden left-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter text-8xl">
               {"FYDE".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
-                  animate={isHovering ? { y: "0%" } : { y: "100%" }}
-                  transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.1 }}
-                  className="inline-block translate-y-full"
+                  animate={cards[0]}
+                  transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.05 }}
+                  className="inline-block"
                 >
                   {item}
                 </motion.span>
@@ -39,19 +35,19 @@ export default function Featured() {
 "
               />
             </div>
-          </div>
-          <div
-            onMouseEnter={() => setHovering1(true)}
-            onMouseLeave={() => setHovering1(false)}
+          </motion.div>
+          <motion.div
+            onHoverStart={() => cards[1].start({ y: "0" })}
+            onHoverEnd={() => cards[1].start({ y: "100%" })}
             className="cardcontainer relative w-1/2 h-[80vh] "
           >
             <div className="absolute flex overflow-hidden text-[#CDEA68] rigth-full -translate-x-1/2 top-1/2 -translate-y-1/2 z-[9] leading-none tracking-tighter text-8xl">
               {"VISE".split("").map((item, index) => (
                 <motion.span
                   initial={{ y: "100%" }}
-                  animate={isHovering1 ? { y: "0%" } : { y: "100%" }}
-                  transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.1 }}
-                  className="inline-block translate-y-full"
+                  animate={cards[1]}
+                  transition={{ ease: [0.22, 1, 0.36, 1], delay: index * 0.05 }}
+                  className="inline-block"
                 >
                   {item}
                 </motion.span>
@@ -63,7 +59,7 @@ export default function Featured() {
                 src="https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
