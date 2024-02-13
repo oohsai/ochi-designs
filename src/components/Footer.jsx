@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div className="flex gap-5 w-full h-screen bg-zinc-900">
-      <div className="w-1/2 h-full flex flex-col justify-between font-['Founders_Grotesk_X-Condensed'] p-20">
+      <div className="w-1/2 h-full flex flex-col justify-between font-founders p-20">
         <div className="heading">
           <h1 className="text-[8vw] font-semibold  uppercase leading-none -mb-10">
             Eye-
@@ -40,7 +40,7 @@ export default function Footer() {
         </svg>
       </div>
       <div className="w-1/2">
-        <h1 className="text-[5vw] font-semibold font-['Founders_Grotesk_X-Condensed'] uppercase leading-none pt-20 -mb-40">
+        <h1 className="text-[5vw] font-semibold font-founders uppercase leading-none pt-20 -mb-40">
           PRESENTATIONS
         </h1>
       </div>

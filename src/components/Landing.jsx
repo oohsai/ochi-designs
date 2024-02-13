@@ -28,7 +28,7 @@ const Landing = () => {
                     />
                   </motion.div>
                 )}
-                <h1 className="uppercase text-[9vw] h-full leading-[7.5vw] font-semibold font-['Founders_Grotesk_X-Condensed'] font-medium">
+                <h1 className="uppercase text-[9vw] h-full leading-[7.5vw] font-semibold font-founders font-medium">
                   {item}
                 </h1>
               </div>

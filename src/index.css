@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: "FoundersGrotesk";
-  src: url("../assets/fonts/FoundersGrotesk-Semibold.woff") format("woff");
+  src: url("../dist/assets/fonts/test-founders-grotesk-x-condensed-regular.woff2")
+    format("woff");
 }
 
 @font-face {
