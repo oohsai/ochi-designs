@@ -3,11 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "FoundersGrotesk";
-  src: url("../assets/fonts/FoundersGrotesk-Semibold.woff") format("woff");
+  font-family: "Founders";
+  src: local("Founders Grotesk"),
+    url("./fonts/FoundersGrotesk-Semibold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "NeueMontreal";
-  src: url("../assets/fonts/NeueMontreal-Regular.woff") format("woff");
+  src: local("NeueMontreal") url("../assets/fonts/NeueMontreal-Regular.woff")
+    format("truetype");
 }

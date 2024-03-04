@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        founders: ["FoundersGrotesk-Semibold", "sans-serif"],
-        neuemontreal: ["NeueMontreal-Regular", "sans-serif"],
+        founders: ["Founders"],
+        neuemontreal: ["NeueMontreal"],
       },
     },
   },
