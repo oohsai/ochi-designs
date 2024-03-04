@@ -1,7 +1,7 @@
 export default function Cards() {
   return (
     <div className="w-full h-screen bg-zinc-900 flex items-center px-32 gap-5">
-      <div className="cardconatiner h-[50vh] w-1/2">
+      <div className="cardcontainer h-[50vh] w-1/2">
         <div className="card relative rounded-xl w-full h-full bg-[#004d43] flex items-center justify-center">
           <img
             className="w-32"

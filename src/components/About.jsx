@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <div className="w-full p-20 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-black">
-      <h1 className="font-neuemontreal text-[4.5vw] leading-[4.5vw] tracking-tight">
+      <h1 className="font-founders text-[4.5vw] leading-[4.5vw] tracking-tight">
         Ochi is a strategic partner for fast-grow­ing tech businesses that need
         to raise funds, sell prod­ucts, ex­plain com­plex ideas, and hire great
         peo­ple.
